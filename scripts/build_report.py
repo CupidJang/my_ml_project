@@ -141,7 +141,7 @@ story = []
 # ── 표지 ─────────────────────────────────────────────────────────────────────
 story += [
     SP(70),
-    Paragraph("로봇 시뮬레이션 환경의", cover_title),
+    Paragraph("시뮬레이션 환경의", cover_title),
     Paragraph("수치 적분 오차 예측을 위한 머신러닝", cover_title),
     SP(14),
     HR(),
@@ -485,6 +485,18 @@ story += [
       "문제 정의, 물리 방정식 도출, RK4 기준값 선택, 모델 아키텍처 결정, "
       "결과 해석 등 모든 과학적 판단은 프로젝트 작성자가 직접 수행하였다. "
       "생성된 코드는 모두 검토 및 검증 후 사용하였다."),
+    SP(24),
+    H1("소스 코드"),
+    HR(),
+    P("본 프로젝트의 전체 소스 코드 및 재현 방법은 아래 GitHub 저장소에서 확인할 수 있다:"),
+    Paragraph(
+        '<link href="https://github.com/CupidJang/my_ml_project">'
+        'https://github.com/CupidJang/my_ml_project</link>',
+        ParagraphStyle("Link",
+            fontName=FONT, fontSize=11, leading=16,
+            textColor=C_ACCENT, spaceAfter=6,
+            alignment=TA_LEFT)
+    ),
 ]
 
 # ── PDF 렌더링 ────────────────────────────────────────────────────────────────
