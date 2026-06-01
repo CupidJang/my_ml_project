@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Data (too large for GitHub)
+data/raw/
+data/processed/
+
+# Trained model weights
+results/models/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+*.egg
+
+# Claude memory (internal)
+.claude/
+pdf_content.txt
